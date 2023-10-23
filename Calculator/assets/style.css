@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.card {
+  box-shadow: 0px 4px 8px 0px black;
+  border: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.display {
+  background-color: black;
+  width: 100%;
+  text-align: right;
+  padding: 10px 20px;
+  color: white;
+  font-size: 2em;
+}
+
+.flex-container-row {
+  display: flex;
+}
+
+.button {
+  flex-basis: 25%;
+  background: linear-gradient(70deg, lightgray, gray);
+  border: 1px solid black;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: linear-gradient(70deg, gray, rgb(82, 82, 82));
+  font-weight: bold;
+}
+
+.clear,
+.inverse,
+.percent,
+.operator,
+.equals {
+  background: linear-gradient(70deg, rgb(255, 182, 46), orange);
+}
+
+.clear:hover,
+.inverse:hover,
+.percent:hover,
+.operator:hover,
+.equals:hover {
+  background: linear-gradient(70deg, orange, rgb(180, 117, 0));
+}
+
+.history {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  overflow: scroll;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid black;
+}
+
+th {
+  background-color: orange;
+  color: white;
+}
+th,
+td {
+  text-align: center;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
+}
+
+@media screen and (max-width: 500px) {
+  .button {
+    padding: 10px;
+  }
+
+  .history {
+    width: 100%;
+  }
+}
